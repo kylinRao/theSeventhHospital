@@ -1,0 +1,17 @@
+用户A和用户B链接都服务器，提供一个接口
+/uploadAction
+{"direction":"MOVE_LEFT","sender":"A的uid","receiver":"B的uid","gameId":"当前这把游戏的gameID"}
+
+表设计：
+神经猫用户信息表
+cat_game_user 
+catUserId:   int 自增加
+telephone:   int  
+IMEI:        char
+
+神经猫当局玩家表：
+game_processing
+gameId：int  自增加
+catUserId: int
+catSlaveUserId:int
+
